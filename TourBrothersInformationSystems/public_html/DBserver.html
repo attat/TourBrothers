@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <?php
+            $dbServername = "localhost";
+            $dbUsername = "ad_capstone2";
+            $dbPassword = "128f9f26";
+            $dbName = "ad_capstone2";
+            
+            $conn = mysqli_connect(dbServername, dbUsername, dbPassword, dbName);
+            
+        ?>
+        
+        <?php
+            if (isset($_POST['Sign Up'])){
+                $first = mysqli_real_escape_string($conn, $_POST['first']);
+                $last = mysqli_real_escape_string($conn, $_POST['last']);
+                $email = mysqli_real_escape_string($conn, $_POST['email']);
+                $username = mysqli_real_escape_string($conn, $_POST['username']);
+                $password = mysqli_real_escape_string($conn, $_POST['password']);
+                
+                // error handlers
+                // check for empty fields
+                
+                if(empty($first))|| (empty($last))||(empty($email))||(empty($username))
+                ||(empty($password)){
+                header("Location: ../signup.php?signup=empty");
+                exit();
+                }else{
+                    // check if input characters are valid
+                    if(preg_match("")){
+                    
+                    }
+                }
+                
+            }else{
+                header("Location: ../signup.php");
+                exit();
+            }
+        ?>
+    </body>
+</html>
