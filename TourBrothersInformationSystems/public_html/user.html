@@ -4,12 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="tb.css">
     <body>
-        <div id="page">
+       <div id="page">
             <div class="topNaviagationLink"><a href="homepage.html">Home</a></div>
-            <div class="topNaviagationLink"><a href="registration.html">Register</a></div>
-            <div class="topNaviagationLink"><a href="login.html">Login</a></div>
-            <div class="topNaviagationLink"><a href="browse.html">Browse</a></div>
-            <div class="topNaviagationLink"><a href="details.html">Random Destination</a></div>
+            <div class="topNaviagationLink"><a href="registration.php">Register</a></div>
+            <div class="topNaviagationLink"><a href="login.php">Login</a></div>
+            <div class="topNaviagationLink"><a href="browse.php">Browse</a></div>
+            <div class="topNaviagationLink"><a href="details.php">Random Destination</a></div>
         </div>
         
         <div id="mainPicture">

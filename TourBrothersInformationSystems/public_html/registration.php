@@ -7,10 +7,10 @@
     <body>
         <div id="page">
             <div class="topNaviagationLink"><a href="homepage.html">Home</a></div>
-            <div class="topNaviagationLink"><a href="registration.html">Register</a></div>
-            <div class="topNaviagationLink"><a href="login.html">Login</a></div>
-            <div class="topNaviagationLink"><a href="browse.html">Browse</a></div>
-            <div class="topNaviagationLink"><a href="details.html">Random Destination</a></div>
+            <div class="topNaviagationLink"><a href="registration.php">Register</a></div>
+            <div class="topNaviagationLink"><a href="login.php">Login</a></div>
+            <div class="topNaviagationLink"><a href="browse.php">Browse</a></div>
+            <div class="topNaviagationLink"><a href="details.php">Random Destination</a></div>
         </div>
         
         <div id="mainPicture">
@@ -32,6 +32,9 @@
                             <li><input type="tel" name="Phone #" size="12" placeholder="Phone Number" required/><br /><br /></li>
                             <li><input type="submit" name="Sign Up" value="Sign Up" /></li>
                         </ul>
+                        <?php
+                        echo "Hello, world! This is my first PHP project!";
+                        ?>
                     </form>
             </div>
         </div>
