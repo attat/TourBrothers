@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-
-
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>Tour Brother's Registration</title>
-<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
-<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
-<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tb.css">
 <script src="sample-registration-form-validation.js"></script>
-</head>
-<body onload="document.registration.userid.focus();">
-<h1>Registration Form</h1>
-
-<form name="registration" action="/userProfile.html" onSubmit="return validateForm();" method="post">
-<ul style="list-style-type:none">
-    
-<li><input type="email" name="email" size="12" placeholder="Email" required/></li>
-
-<li><input type="text" name="firstname" size="12" placeholder="First Name" required/></li>
-
-<li><input type="text" name="lastname" size="12" placeholder="Last Name" required/></li>
-
-<li><input type="password" name="passid" size="12" placeholder="Password" required/></li>
-
-<li><input type="tel" name="Phone #" size="12" placeholder="Phone Number" required/></li>
-
-
-<li><input type="submit" name="Sign Up" value="Sign Up" /></li>
-</ul>
-</form>
-</body>
+    <body>
+        <div id="page">
+            <div class="topNaviagationLink"><a href="homepage.html">Home</a></div>
+            <div class="topNaviagationLink"><a href="registration.html">Register</a></div>
+            <div class="topNaviagationLink"><a href="login.html">Login</a></div>
+            <div class="topNaviagationLink"><a href="browse.html">Browse</a></div>
+            <div class="topNaviagationLink"><a href="details.html">Random Destination</a></div>
+        </div>
+        
+        <div id="mainPicture">
+            <div class="picture">
+                <div id="headerTitle">Register</div>
+                <div id="headerSubtext">Please provide the information below in order to create a Tour Brother's account.</div>
+            </div>
+        </div>
+        
+        <div class="contentBox">
+            <div class="innerBox">
+                <div class="contentTitle">Register Account</div><br /><br />
+                    <form name="registration" action="/userProfile.html" onSubmit="return validateForm();" method="post">
+                        <ul style="list-style-type:none">
+                            <li><input type="email" name="email" size="12" placeholder="Email" required/><br /><br /></li>
+                            <li><input type="text" name="firstname" size="12" placeholder="First Name" required/><br /><br /></li>
+                            <li><input type="text" name="lastname" size="12" placeholder="Last Name" required/><br /><br /></li>
+                            <li><input type="password" name="passid" size="12" placeholder="Password" required/><br /><br /></li>
+                            <li><input type="tel" name="Phone #" size="12" placeholder="Phone Number" required/><br /><br /></li>
+                            <li><input type="submit" name="Sign Up" value="Sign Up" /></li>
+                        </ul>
+                    </form>
+            </div>
+        </div>
+        
+        <div id="footer"><img src="logo.png" alt="Tour Brother's Logo" width="70" height="70"></div>
+    </body>
 </html>
